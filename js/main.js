@@ -73,19 +73,48 @@
     sections.forEach(function (s) { spy.observe(s); });
   }
 
-  /* ---------- Kontaktskjema (demo) ---------- */
+  /* ---------- Kontaktskjema ----------
+     Sender via fetch når et action-endpoint er satt (f.eks. Formspree).
+     Uten endpoint later skjemaet IKKE som om det sender – da henvises
+     besøkende til telefon. */
   var form = document.getElementById('contactForm');
   var status = document.getElementById('formStatus');
+  function setStatus(msg, ok) {
+    if (!status) return;
+    status.textContent = msg;
+    status.className = 'form-status' + (ok ? ' ok' : ' err');
+  }
   if (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       if (!form.checkValidity()) { form.reportValidity(); return; }
+
+      var action = (form.getAttribute('action') || '').trim();
       var navn = (new FormData(form).get('navn') || '').toString().trim().split(' ')[0];
-      form.reset();
-      if (status) {
-        status.textContent = 'Takk' + (navn ? ', ' + navn : '') + '. Dette er en demo – ingenting ble sendt. På en ekte side går forespørselen rett til firmaet.';
-        status.className = 'form-status ok';
+
+      // Ingen tjeneste koblet til ennå: ikke lat som om noe sendes.
+      if (!action || action === '#') {
+        setStatus('Takk for interessen! For raskest svar, ring oss på 95 20 08 10 – så tar vi en uforpliktende prat om prosjektet.', true);
+        return;
       }
+
+      // Ekte innsending.
+      var btn = form.querySelector('button[type="submit"]');
+      if (btn) { btn.disabled = true; }
+      setStatus('Sender …', true);
+      fetch(action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
+        .then(function (res) {
+          if (res.ok) {
+            form.reset();
+            setStatus('Takk' + (navn ? ', ' + navn : '') + '! Forespørselen er sendt – vi tar kontakt så snart vi kan.', true);
+          } else {
+            setStatus('Noe gikk galt. Ring oss gjerne på 95 20 08 10, så hjelper vi deg.', false);
+          }
+        })
+        .catch(function () {
+          setStatus('Noe gikk galt. Ring oss gjerne på 95 20 08 10, så hjelper vi deg.', false);
+        })
+        .finally(function () { if (btn) { btn.disabled = false; } });
     });
   }
 })();
