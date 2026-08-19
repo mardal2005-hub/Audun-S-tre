@@ -1,32 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Byggfirma Audun Sætre – tømrer og byggetjenester i Haugesund">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Byggfirma Audun Sætre – tømrer og bygg i Haugesund">
   <defs>
-    <linearGradient id="og" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#111a26"/><stop offset="1" stop-color="#0b0f15"/>
-    </linearGradient>
-    <linearGradient id="ogglow" x1="0" y1="1" x2="1" y2="0">
-      <stop offset="0" stop-color="#c08a3e" stop-opacity="0.22"/><stop offset="1" stop-color="#c08a3e" stop-opacity="0"/>
-    </linearGradient>
+    <filter id="g"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="5" stitchTiles="stitch" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/></filter>
+    <filter id="b"><feTurbulence type="fractalNoise" baseFrequency="0.007" numOctaves="4" seed="11" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.55 0"/></filter>
+    <radialGradient id="v" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.4"/></radialGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#og)"/>
-  <rect width="1200" height="630" fill="url(#ogglow)"/>
-  <g stroke="#31465a" stroke-width="1" opacity="0.14">
-    <path d="M0 90H1200M0 180H1200M0 270H1200M0 360H1200M0 450H1200M0 540H1200M100 0V630M300 0V630M500 0V630M700 0V630M900 0V630M1100 0V630"/>
-  </g>
-  <!-- frame line-art on right -->
-  <g fill="none" stroke="#54677b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.8" transform="translate(720,150)">
-    <path d="M40 380 V150 L220 40 L400 150 V380"/>
-    <path d="M40 150 L220 40 L400 150"/>
-    <path d="M100 380V180M160 380V165M220 380V150M280 380V165M340 380V180" stroke-width="2.5"/>
-    <g stroke="#c08a3e" stroke-width="4"><rect x="150" y="230" width="70" height="90"/></g>
-  </g>
-  <!-- brand mark -->
-  <g transform="translate(90,150)">
-    <rect width="72" height="72" rx="14" fill="#0e141c" stroke="#c08a3e" stroke-width="2"/>
-    <path d="M16 40 L36 22 L56 40" fill="none" stroke="#c08a3e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M22 54 L31 34 L40 54" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-  </g>
-  <text x="90" y="330" font-family="Inter, Arial, sans-serif" font-size="62" font-weight="800" fill="#ffffff" letter-spacing="-1">Byggfirma</text>
-  <text x="90" y="400" font-family="Inter, Arial, sans-serif" font-size="62" font-weight="800" fill="#ffffff" letter-spacing="-1">Audun Sætre</text>
-  <text x="92" y="452" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="600" fill="#c08a3e" letter-spacing="3">TØMRER &amp; BYGG · HAUGESUND</text>
-  <text x="92" y="520" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="500" fill="#c3ccd6">Solid håndverk. Fra idé til ferdig bygg.</text>
+  <rect width="1200" height="630" fill="#211f1b"/>
+  <rect width="1200" height="630" fill="#0d0c0a" filter="url(#b)" opacity="0.5"/>
+  <rect width="1200" height="630" filter="url(#g)"/>
+  <rect width="1200" height="630" fill="url(#v)"/>
+  <text x="90" y="300" font-family="Georgia, 'Times New Roman', serif" font-size="30" letter-spacing="8" fill="#c9bfa8">TØMRER · BYGG · HAUGESUND</text>
+  <text x="86" y="380" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-weight="600" fill="#f4f1ea">Byggfirma Audun Sætre</text>
+  <text x="90" y="440" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-style="italic" fill="#d8d2c4">Solid håndverk. Bygg som varer.</text>
+  <rect x="90" y="486" width="64" height="2" fill="#a9743f"/>
 </svg>

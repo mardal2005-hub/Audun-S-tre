@@ -1,9 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Byggfirma Audun Sætre">
-  <rect width="64" height="64" rx="12" fill="#0e141c"/>
-  <!-- gable roof mark in amber -->
-  <path d="M14 34 L32 18 L50 34" fill="none" stroke="#c08a3e" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <!-- A / S monogram baseline -->
-  <path d="M20 46 L28 30 L36 46" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M23 40 H33" fill="none" stroke="#ffffff" stroke-width="3.4" stroke-linecap="round"/>
-  <path d="M46 32 q-6 0 -6 4 q0 4 6 4 q6 0 6 4 q0 4 -6 4" fill="none" stroke="#c08a3e" stroke-width="4" stroke-linecap="round"/>
+  <rect width="64" height="64" fill="#211f1b"/>
+  <rect x="6" y="6" width="52" height="52" fill="none" stroke="#a9743f" stroke-width="1.5"/>
+  <text x="32" y="43" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="600" letter-spacing="1" fill="#f4f1ea">AS</text>
 </svg>

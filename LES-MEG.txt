@@ -1,32 +1,37 @@
 BYGGFIRMA AUDUN SÆTRE – DEMO-NETTSIDE
 =====================================
 
-Slik åpner du nettsiden:
-1. Pakk ut hele zip-mappen.
-2. Dobbeltklikk på "index.html" – den åpnes i nettleseren din.
-   (Fungerer uten internett. Med internett lastes en penere skrifttype.)
+Åpne siden:
+- Live på GitHub Pages, eller
+- Dobbeltklikk "index.html" (fungerer uten internett; med internett
+  lastes riktige skrifttyper Fraunces + Archivo).
 
-Hva er dette:
-Dette er et DEMO-forslag til hvordan en moderne nettside for Byggfirma
-Audun Sætre kan se ut. Alt av design, tekst og bilder kan endres.
+Designretning:
+Editorial håndverks-/arkitektstil. Materialbasert palett – varm off-white,
+stein, grafitt og en diskret tre-/jordfarget aksent. Stor serif-typografi,
+asymmetriske layouts, hårfine linjer og mye whitespace. Bevisst helt
+annerledes enn andre demoer.
+
+Om bildene:
+Nettverket tillot ikke nedlasting av ekte foto, så de store flatene er
+materialtexturer (betong/tre/stein/metall laget med SVG-tekstur) som står
+som premium plassholdere. De byttes enkelt ut med Auduns egne foto:
+- Hero: stort foto av bolig/byggeprosjekt
+- Tjenester: ett foto per tjeneste
+- Prosjekter: merket "Ditt prosjekt her" – erstattes med ekte prosjektfoto
+- Om oss: portrett av Audun
 
 Om innholdet:
-- Nettsiden bruker kun informasjon som er kjent om firmaet
-  (navn, adresse, telefon, org.form, registreringsår, hovednæring).
-- Det er IKKE lagt inn oppdiktede kundeomtaler, priser, ansatte,
-  sertifiseringer eller konkrete prosjekter.
-- Der det mangler ekte innhold er det brukt tydelige plassholdere,
-  f.eks. "Prosjektbilde" og "Her kan vi legge inn et bilde av Audun".
-- Bildene er stiliserte illustrasjoner (SVG). De byttes enkelt ut med
-  ekte foto fra firmaet.
+Kun kjente fakta er brukt (Haugesund, Beitene 14B, tlf 95 20 08 10,
+enkeltpersonforetak, oppføring av bygninger, etablert 1998). Ingen
+oppdiktede kundeomtaler, priser, ansatte, sertifiseringer eller prosjekter.
 
-Kontaktskjemaet:
-I demoen sender ikke skjemaet noen data. På en ekte side kobles det til
-e-post eller et skjemasystem, slik at henvendelser går rett til firmaet.
+Kontaktskjema:
+Sender ingen data i demoen. Kobles til e-post/skjemasystem på en ekte side.
 
 Filer:
 - index.html ........ forsiden
-- personvern.html ... personvernerklæring (utkast)
-- css/styles.css .... design
+- personvern.html ... personvern (utkast)
+- css/styles.css .... designsystemet
 - js/main.js ........ meny, animasjoner, skjema
-- assets/img/ ....... bilder/illustrasjoner (SVG)
+- assets/img/ ....... materialtexturer, favicon, delingsbilde (SVG)

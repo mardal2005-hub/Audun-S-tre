@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Materialtekstur">
+  <defs>
+    <filter id="blotch11" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.006 0.009" numOctaves="4" seed="11" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.55 0"/>
+    </filter>
+    <filter id="grain11" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="14" stitchTiles="stitch" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0"/>
+    </filter>
+    <radialGradient id="vig11" cx="50%" cy="46%" r="75%">
+      <stop offset="0" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.42"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="#211f1b"/>
+  <rect width="1600" height="1000" fill="#0d0c0a" filter="url(#blotch11)" opacity="0.5"/>
+  <radialGradient id="lg11" cx="72%" cy="18%" r="80%"><stop offset="0" stop-color="#c9bfa8" stop-opacity="0.10"/><stop offset="1" stop-color="#c9bfa8" stop-opacity="0"/></radialGradient><rect width="1600" height="1000" fill="url(#lg11)"/>
+  <rect width="1600" height="1000" filter="url(#grain11)"/>
+  <rect width="1600" height="1000" fill="url(#vig11)"/>
+</svg>
