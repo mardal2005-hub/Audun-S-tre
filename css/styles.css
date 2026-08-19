@@ -56,6 +56,7 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; line-height: 1.06;
 }
 .overline.muted { color: var(--ink-soft); }
 
+.sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 .skip-link { position: absolute; left: -9999px; top: 0; background: var(--graphite); color: var(--paper); padding: 12px 18px; z-index: 200; }
 .skip-link:focus { left: 0; }
 :focus-visible { outline: 2px solid var(--wood); outline-offset: 3px; }
@@ -111,13 +112,27 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; line-height: 1.06;
 .nav-links a:hover::after, .nav-links a.active::after { right: 0; }
 .nav .btn { padding: 12px 20px; }
 
+/* Header-telefon: "Ring oss · 95 20 08 10" */
+.nav-tel { display: inline-flex; align-items: baseline; gap: 9px; white-space: nowrap; transition: color .3s var(--ease); }
+.nav-tel span { font-size: .64rem; font-weight: 600; text-transform: uppercase; letter-spacing: .18em; color: rgba(244,241,234,0.62); }
+.nav-tel span::after { content: "·"; margin-left: 9px; }
+.nav-tel { font-family: var(--sans); font-weight: 600; font-size: .92rem; letter-spacing: .01em; color: var(--paper); }
+.nav-tel:hover { color: var(--wood); }
+@media (max-width: 1120px) { .nav-tel { display: none; } }
+
 /* Scrolled state -> solid paper, dark text */
 .site-header.solid { background: var(--paper); border-bottom-color: var(--line); height: 72px; }
 .site-header.solid .wm-name { color: var(--graphite); }
 .site-header.solid .wm-sub { color: var(--ink-soft); }
 .site-header.solid .nav-links a { color: var(--graphite); }
+.site-header.solid .nav-tel { color: var(--graphite); }
+.site-header.solid .nav-tel:hover { color: var(--wood); }
+.site-header.solid .nav-tel span { color: var(--ink-soft); }
 .site-header.solid .nav .btn { background: var(--graphite); color: var(--paper); border-color: var(--graphite); }
 .site-header.solid .nav .btn:hover { background: var(--wood); border-color: var(--wood); }
+/* static-solid (indre sider) arver samme farger */
+.site-header.static-solid .nav-tel { color: var(--graphite); }
+.site-header.static-solid .nav-tel span { color: var(--ink-soft); }
 
 .nav-toggle { display: none; background: none; border: 0; cursor: pointer; padding: 8px; flex-direction: column; gap: 6px; }
 .nav-toggle span { display: block; width: 28px; height: 1.5px; background: var(--paper); transition: transform .3s var(--ease), opacity .3s var(--ease), background .4s var(--ease); }
@@ -310,9 +325,9 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; line-height: 1.06;
   .nav.open .nav-links { display: flex; flex-direction: column; gap: 0; }
   .nav.open .nav-links a { color: var(--graphite); padding: 15px var(--gutter); border-top: 1px solid var(--line); letter-spacing: .12em; }
   .nav.open .nav-links a::after { display: none; }
-  .nav.open .nav-tel { display: block; padding: 16px var(--gutter) 4px; border-top: 1px solid var(--line); }
-  .nav.open .nav-tel a { font-family: var(--serif); font-size: 1.5rem; color: var(--graphite); }
-  .nav.open .nav-tel span { display: block; font-size: .64rem; letter-spacing: .2em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 2px; }
+  .nav.open .nav-tel { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; padding: 16px var(--gutter) 6px; border-top: 1px solid var(--line); font-family: var(--serif); font-size: 1.5rem; color: var(--graphite); }
+  .nav.open .nav-tel span { font-family: var(--sans); font-weight: 600; font-size: .62rem; letter-spacing: .2em; text-transform: uppercase; color: var(--ink-soft); }
+  .nav.open .nav-tel span::after { display: none; }
   .nav.open > .btn { display: inline-flex; justify-content: center; margin: 14px var(--gutter) 0; }
 }
 @media (max-width: 560px) {
