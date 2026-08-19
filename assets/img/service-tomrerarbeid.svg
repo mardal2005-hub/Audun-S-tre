@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 330" width="480" height="330" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustrasjon av tømrerarbeid – reisverk og verktøy">
+  <defs>
+    <linearGradient id="bgT" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16222f"/><stop offset="1" stop-color="#0e141c"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="330" fill="url(#bgT)"/>
+  <g stroke="#31465a" stroke-width="1" opacity="0.25">
+    <path d="M0 66H480M0 132H480M0 198H480M0 264H480M80 0V330M160 0V330M240 0V330M320 0V330M400 0V330"/>
+  </g>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- stud wall -->
+    <g stroke="#cdd6df" stroke-width="3.5">
+      <path d="M70 250H300M70 90H300"/>
+      <path d="M92 250V90M138 250V90M184 250V90M230 250V90M276 250V90"/>
+    </g>
+    <path d="M92 250 L230 90" stroke="#c08a3e" stroke-width="4"/>
+    <!-- hammer -->
+    <g stroke="#c08a3e" stroke-width="5" opacity="0.95">
+      <path d="M330 300 L380 170"/>
+    </g>
+    <g stroke="#cdd6df" stroke-width="5">
+      <path d="M366 150 q26 -18 52 -2 q-8 26 -34 34 l-18 -32 Z" fill="#cdd6df"/>
+    </g>
+  </g>
+</svg>

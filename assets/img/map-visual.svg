@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" width="700" height="500" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Stilisert kart over Haugesund-området">
+  <defs>
+    <linearGradient id="mapbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16222f"/><stop offset="1" stop-color="#0e141c"/>
+    </linearGradient>
+  </defs>
+  <rect width="700" height="500" fill="url(#mapbg)"/>
+  <!-- water -->
+  <path d="M0 0 H240 Q210 140 250 250 Q210 380 250 500 H0 Z" fill="#0f1a26" opacity="0.9"/>
+  <path d="M240 0 Q210 140 250 250 Q210 380 250 500" fill="none" stroke="#34506a" stroke-width="2" opacity="0.6"/>
+  <!-- roads -->
+  <g stroke="#3a4d61" stroke-width="6" fill="none" opacity="0.8" stroke-linecap="round">
+    <path d="M250 250 L700 210"/>
+    <path d="M300 60 L360 250 L420 470"/>
+    <path d="M360 250 L640 380"/>
+  </g>
+  <g stroke="#4a6079" stroke-width="2.5" fill="none" opacity="0.5" stroke-linecap="round">
+    <path d="M420 130 L560 180 M320 350 L520 300 M470 250 L520 60"/>
+  </g>
+  <!-- blocks -->
+  <g fill="#1c2b3a" opacity="0.7">
+    <rect x="380" y="200" width="40" height="30" rx="3"/>
+    <rect x="430" y="220" width="34" height="26" rx="3"/>
+    <rect x="360" y="290" width="38" height="28" rx="3"/>
+    <rect x="480" y="280" width="30" height="24" rx="3"/>
+  </g>
+  <!-- location marker (Beitene / Haugesund) -->
+  <g transform="translate(360,250)">
+    <circle r="46" fill="#c08a3e" opacity="0.14"/>
+    <circle r="26" fill="#c08a3e" opacity="0.22"/>
+  </g>
+</svg>

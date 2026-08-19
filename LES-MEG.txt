@@ -1,0 +1,32 @@
+BYGGFIRMA AUDUN SÆTRE – DEMO-NETTSIDE
+=====================================
+
+Slik åpner du nettsiden:
+1. Pakk ut hele zip-mappen.
+2. Dobbeltklikk på "index.html" – den åpnes i nettleseren din.
+   (Fungerer uten internett. Med internett lastes en penere skrifttype.)
+
+Hva er dette:
+Dette er et DEMO-forslag til hvordan en moderne nettside for Byggfirma
+Audun Sætre kan se ut. Alt av design, tekst og bilder kan endres.
+
+Om innholdet:
+- Nettsiden bruker kun informasjon som er kjent om firmaet
+  (navn, adresse, telefon, org.form, registreringsår, hovednæring).
+- Det er IKKE lagt inn oppdiktede kundeomtaler, priser, ansatte,
+  sertifiseringer eller konkrete prosjekter.
+- Der det mangler ekte innhold er det brukt tydelige plassholdere,
+  f.eks. "Prosjektbilde" og "Her kan vi legge inn et bilde av Audun".
+- Bildene er stiliserte illustrasjoner (SVG). De byttes enkelt ut med
+  ekte foto fra firmaet.
+
+Kontaktskjemaet:
+I demoen sender ikke skjemaet noen data. På en ekte side kobles det til
+e-post eller et skjemasystem, slik at henvendelser går rett til firmaet.
+
+Filer:
+- index.html ........ forsiden
+- personvern.html ... personvernerklæring (utkast)
+- css/styles.css .... design
+- js/main.js ........ meny, animasjoner, skjema
+- assets/img/ ....... bilder/illustrasjoner (SVG)

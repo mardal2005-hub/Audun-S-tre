@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustrasjon av et trehus under bygging med reisverk og takstoler">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1017"/>
+      <stop offset="0.55" stop-color="#0e141c"/>
+      <stop offset="1" stop-color="#141d28"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#c08a3e" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#c08a3e" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141d28"/>
+      <stop offset="1" stop-color="#0b0f15"/>
+    </linearGradient>
+  </defs>
+
+  <!-- sky / base -->
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+
+  <!-- faint blueprint grid -->
+  <g stroke="#3a4a5c" stroke-width="1" opacity="0.10">
+    <path d="M0 120H1600M0 240H1600M0 360H1600M0 480H1600M0 600H1600M0 720H1600M0 840H1600"/>
+    <path d="M120 0V1000M280 0V1000M440 0V1000M600 0V1000M760 0V1000M920 0V1000M1080 0V1000M1240 0V1000M1400 0V1000M1560 0V1000"/>
+  </g>
+
+  <!-- warm horizon glow behind the frame -->
+  <rect x="700" y="360" width="900" height="420" fill="url(#glow)"/>
+
+  <!-- distant tree line silhouette (local, subtle) -->
+  <g fill="#0c121a" opacity="0.9">
+    <path d="M0 720 q60 -40 120 -30 q40 -50 90 -30 q60 -40 130 -20 q50 -46 120 -22 q70 -34 150 -18 l0 120 L0 840 Z"/>
+  </g>
+
+  <!-- ground -->
+  <rect x="0" y="770" width="1600" height="230" fill="url(#ground)"/>
+  <line x1="0" y1="772" x2="1600" y2="772" stroke="#2b3a4a" stroke-width="2" opacity="0.6"/>
+
+  <!-- ===== Timber house frame (line art) ===== -->
+  <g stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- concrete / base plate -->
+    <rect x="770" y="742" width="620" height="30" fill="#101923" stroke="#33475a" stroke-width="2"/>
+
+    <!-- floor joists hint -->
+    <g stroke="#3a5064" stroke-width="2" opacity="0.55">
+      <path d="M800 757H1360M840 742V772M920 742V772M1000 742V772M1080 742V772M1160 742V772M1240 742V772M1320 742V772"/>
+    </g>
+
+    <!-- wall studs (reisverk) -->
+    <g stroke="#c9d3dd" stroke-width="3">
+      <!-- bottom & top plates -->
+      <path d="M800 742H1360"/>
+      <path d="M800 470H1360"/>
+      <!-- vertical studs -->
+      <path d="M812 742V470M868 742V470M924 742V470M980 742V470M1036 742V470M1092 742V470M1148 742V470M1204 742V470M1260 742V470M1316 742V470M1348 742V470"/>
+    </g>
+    <!-- diagonal brace -->
+    <path d="M812 742 L1036 470" stroke="#c08a3e" stroke-width="3.5" opacity="0.95"/>
+    <path d="M1348 742 L1148 470" stroke="#c08a3e" stroke-width="3" opacity="0.7"/>
+
+    <!-- gable roof trusses (takstoler) -->
+    <g stroke="#c9d3dd" stroke-width="3">
+      <!-- ridge to eaves outline -->
+      <path d="M770 470 L1080 300 L1390 470"/>
+      <!-- individual trusses -->
+      <path d="M812 456 L1080 320 L1348 456"/>
+      <path d="M868 456 L1080 332 L1290 456" opacity="0.75"/>
+      <path d="M924 456 L1080 344 L1236 456" opacity="0.55"/>
+      <!-- ridge beam -->
+      <path d="M1080 300 L1080 470" stroke-width="2.5"/>
+      <!-- collar ties -->
+      <path d="M956 400 H1204" stroke-width="2" opacity="0.7"/>
+      <path d="M1000 372 H1160" stroke-width="2" opacity="0.5"/>
+    </g>
+
+    <!-- window opening framed -->
+    <rect x="1092" y="540" width="112" height="150" stroke="#c08a3e" stroke-width="3" opacity="0.9"/>
+    <line x1="1092" y1="615" x2="1204" y2="615" stroke="#c08a3e" stroke-width="2" opacity="0.6"/>
+
+    <!-- ===== Scaffolding on the left of frame ===== -->
+    <g stroke="#5a6b7d" stroke-width="2.5" opacity="0.85">
+      <rect x="700" y="470" width="70" height="300"/>
+      <path d="M700 540H770M700 610H770M700 680H770"/>
+      <path d="M700 470 L770 540 M700 540 L770 610 M700 610 L770 680" opacity="0.5"/>
+    </g>
+
+    <!-- ladder -->
+    <g stroke="#c08a3e" stroke-width="2.5" opacity="0.9">
+      <path d="M1400 742 L1372 520 M1424 742 L1396 520"/>
+      <path d="M1398 700 L1420 700 M1394 660 L1416 660 M1390 620 L1412 620 M1386 580 L1408 580 M1382 540 L1404 540"/>
+    </g>
+
+    <!-- sawhorse foreground -->
+    <g stroke="#8895a3" stroke-width="3" opacity="0.9">
+      <path d="M560 770 L560 700 L720 700 L720 770"/>
+      <path d="M540 770 L575 700 M740 770 L705 700"/>
+      <path d="M560 700 L720 700"/>
+    </g>
+    <!-- plank on sawhorse -->
+    <path d="M520 692 L760 692" stroke="#c08a3e" stroke-width="6" opacity="0.85"/>
+  </g>
+
+  <!-- soft vignette -->
+  <rect width="1600" height="1000" fill="#080c11" opacity="0" />
+</svg>
