@@ -19,8 +19,8 @@
   --line:       rgba(35, 33, 29, 0.14);   /* hårfin strek på lys */
   --line-dark:  rgba(244, 241, 234, 0.16);/* hårfin strek på mørk */
 
-  --maxw: 1280px;
-  --gutter: clamp(20px, 5vw, 80px);
+  --maxw: 1440px;
+  --gutter: clamp(20px, 3.3vw, 48px);
   --header-h: 84px;
 
   --serif: 'Fraunces', 'Iowan Old Style', Georgia, 'Times New Roman', serif;
